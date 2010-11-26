@@ -1,0 +1,63 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+#  jQuery.ferris v.1
+#  - Rotate DOM elements.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
+          TABLE OF CONTENTS
+---------------------------------------------------------------------
+I.    Usage
+
+II.   Options
+
+III.  Contributers/Contributing
+
+
+
+I.        USAGE
+---------------------------------------------------------------------
+$().ready(function() {
+  $("#Ferris").ferris({
+    /* Options */
+  });
+});
+
+<div id="Ferris">
+  <div class="car">1</div>
+  <div class="car">2</div>
+           ...
+  <div class="car">8</div>
+  <div class="car">9</div>
+</div>
+
+.car {
+  height : 10px;
+  width  : 10px;
+  background : black;
+  color : white;
+}
+
+
+
+II.       OPTIONS
+---------------------------------------------------------------------
+  DEFAULTS
+navigation : '#Controls', //Click to rotate
+radius     : 100,         //px
+center_x   : 0,
+center_y   : 0,
+automatic  : false,       //continuously rotate
+automatic_stall : 100,    //stall for N ms between each rotation
+animation_speed : 1000,   //ms
+clockwise  : false        //bool
+
+
+
+III.      Contributers/Contributing
+---------------------------------------------------------------------
+jQuery.ferris is developed by aef.
+Originally developed on Nov 1 2010.
+
+To contribute visit http://github.com/aef-/jquery.ferris.
